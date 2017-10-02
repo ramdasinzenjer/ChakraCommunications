@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/about_icon"
+            android:title="About" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/services"
+            android:title="Services" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/portfolio"
+            android:title="Portfolio" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/printandsign"
+            android:title="Prints and Signs" />
+        <item
+            android:id="@+id/our_client"
+            android:icon="@drawable/clientsss"
+            android:title="Our Client" />
+        <item
+            android:id="@+id/Contact"
+            android:icon="@drawable/contact"
+            android:title="Contact" />
+    </group>
+
+
+</menu>
