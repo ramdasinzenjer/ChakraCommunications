@@ -18,10 +18,10 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        android:fitsSystemWindows="true"
         android:background="#564848"
-        app:itemTextColor="#ffffff"
+        android:fitsSystemWindows="true"
         app:headerLayout="@layout/nav_header_main2"
+        app:itemTextColor="#ffffff"
         app:menu="@menu/activity_main2_drawer" />
 
 

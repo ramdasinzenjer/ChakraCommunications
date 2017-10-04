@@ -1,16 +1,12 @@
 package com.inzenjer.chakracommunications;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.Menu;
 import android.view.MenuItem;
 
 import com.daimajia.slider.library.Animations.DescriptionAnimation;
@@ -30,27 +26,28 @@ public class Main2Activity extends AppCompatActivity
         setContentView(R.layout.activity_main2);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        mDemoSlider = (SliderLayout)findViewById(R.id.slider);
+        mDemoSlider = (SliderLayout) findViewById(R.id.slider);
 
-        HashMap<String,Integer> file_maps = new HashMap<String, Integer>();
-        file_maps.put("one",R.drawable.drawable1);
-        file_maps.put("Two",R.drawable.drawable2);
-        file_maps.put("Three",R.drawable.drawable3);
-        file_maps.put("Four", R.drawable.drawable4);
-        file_maps.put("Five", R.drawable.drawable5);
+        HashMap<String, Integer> file_maps = new HashMap<String, Integer>();
+        file_maps.put("one", R.drawable.img1);
+        file_maps.put("Two", R.drawable.img2);
+        file_maps.put("Three", R.drawable.img3uu);
+        file_maps.put("Four", R.drawable.img4);
+        file_maps.put("Five", R.drawable.img5);
+        file_maps.put("Chakra Communications", R.drawable.img6);
 
-        for(String name : file_maps.keySet()){
+        for (String name : file_maps.keySet()) {
             TextSliderView textSliderView = new TextSliderView(this);
             // initialize a SliderLayout
             textSliderView
-                    .description(name)
+                    //.description(name)
                     .image(file_maps.get(name))
                     .setScaleType(BaseSliderView.ScaleType.Fit);
 
             //add your extra information
             textSliderView.bundle(new Bundle());
             textSliderView.getBundle()
-                    .putString("extra",name);
+                    .putString("extra", name);
 
             mDemoSlider.addSlider(textSliderView);
         }

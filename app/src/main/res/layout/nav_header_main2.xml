@@ -20,11 +20,11 @@
         app:srcCompat="@drawable/logo" />
 
     <TextView
-        android:paddingTop="10dp"
         android:id="@+id/textView"
-        android:textColor="#ffffff"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="    mail@chakracom.net" />
+        android:paddingTop="10dp"
+        android:text="    mail@chakracom.net"
+        android:textColor="#ffffff" />
 
 </LinearLayout>
